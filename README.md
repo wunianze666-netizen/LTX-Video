@@ -15,27 +15,27 @@ This is the official repository for LTX-Video.
 
 ---
 
-## 🚀 **New: LTX-2 is Now Available!**
+## 馃殌 **New: LTX-2 is Now Available!**
 
 **We're excited to announce [LTX-2](https://github.com/Lightricks/LTX-2) - the next generation of LTX with synchronized audio+video generation!**
 
 LTX-2 is the first DiT-based audio-video foundation model that contains all core capabilities of modern video generation in one model. **LTX-2 is now the primary home for LTX development** and includes significant improvements:
 
-- 🎵 **Synchronized Audio+Video Generation** - Generate videos with perfectly synchronized audio
-- 🎬 **Latest Model** - LTX-2 with improved quality and capabilities
-- 🔌 **ComfyUI Integration** - Built into ComfyUI core for seamless workflows
-- 🎯 **Advanced Features:**
+- 馃幍 **Synchronized Audio+Video Generation** - Generate videos with perfectly synchronized audio
+- 馃幀 **Latest Model** - LTX-2 with improved quality and capabilities
+- 馃攲 **ComfyUI Integration** - Built into ComfyUI core for seamless workflows
+- 馃幆 **Advanced Features:**
   - Multiple keyframe support
   - IC-LoRA control models for precise generation
   - Standard LoRA support for style customization
   - Latent upsampler for multiscale pipelines
-- 🛠️ **Training Tools** - LoRA training capabilities
-- 📚 **Comprehensive Documentation** - Full documentation at [https://docs.ltx.video](https://docs.ltx.video)
-- 🔄 **Active Development** - Ongoing improvements and community support
+- 馃洜锔?**Training Tools** - LoRA training capabilities
+- 馃摎 **Comprehensive Documentation** - Full documentation at [https://docs.ltx.video](https://docs.ltx.video)
+- 馃攧 **Active Development** - Ongoing improvements and community support
 
-**[👉 Check out LTX-2 here](https://github.com/Lightricks/LTX-2)**
+**[馃憠 Check out LTX-2 here](https://github.com/Lightricks/LTX-2)**
 
-**[📖 View Documentation](https://docs.ltx.video)**
+**[馃摉 View Documentation](https://docs.ltx.video)**
 
 ---
 
@@ -85,7 +85,7 @@ The model supports image-to-video, multi-keyframe conditioning, keyframe-based a
 
 ## October 23, 2025: LTX-2 Announced
 
-Today we announced our newest foundation model, LTX-2. LTX-2 represents a major leap forward from our previous model, LTXV 0.9.8. Here’s what’s new:
+Today we announced our newest foundation model, LTX-2. LTX-2 represents a major leap forward from our previous model, LTXV 0.9.8. Here鈥檚 what鈥檚 new:
 * **Audio + Video, Together**: Visuals and sound are generated in one coherent process, with motion, dialogue, ambience, and music flowing simultaneously.
 * **4K Fidelity**: Professional-grade precision with native 4K and up to 50 fps, sharp textures, clean motion, and synchronized audio.
 * **Longer Generations**: LTX-2 supports longer, continuous clips with synchronized audio up to 10 seconds.
@@ -143,7 +143,7 @@ For more details, please see our [blog post](https://website.ltx.video/blog/intr
     * Does not require classifier-free guidance and spatio-temporal guidance.
     * Supports sampling with 8 (recommended), or less diffusion steps.
 - Improved prompt adherence, motion quality and fine details.
-- New default resolution and FPS: 1216 × 704 pixels at 30 FPS
+- New default resolution and FPS: 1216 脳 704 pixels at 30 FPS
     * Still real time on H100 with the distilled model.
     * Other resolutions and FPS are still supported.
 - Support stochastic inference (can improve visual quality when using the distilled model)
@@ -195,7 +195,7 @@ ltxv-2b-0.9.8-distilled        | Smaller model, slight quality reduction compare
 | ltxv-13b-0.9.8-distilled-fp8     | Quantized version of ltxv-13b-distilled | [ltxv-13b-0.9.8-distilled-fp8.yaml](https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-13b-0.9.8-distilled-fp8.yaml) | [ltxv-13b-dist-i2v-base-fp8.json](https://github.com/Lightricks/ComfyUI-LTXVideo/blob/master/example_workflows/13b-distilled/ltxv-13b-dist-i2v-base-fp8.json) |
 | ltxv-2b-0.9.8-distilled-fp8     | Quantized version of ltxv-2b-distilled | [ltxv-2b-0.9.8-distilled-fp8.yaml](https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-2b-0.9.8-distilled-fp8.yaml) | N/A |
 | ltxv-2b-0.9.6                     | Good quality, lower VRAM requirement than ltxv-13b                                         | [ltxv-2b-0.9.6-dev.yaml](https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-2b-0.9.6-dev.yaml)                                                 | [ltxvideo-i2v.json](https://github.com/Lightricks/ComfyUI-LTXVideo/blob/master/example_workflows/low_level/ltxvideo-i2v.json)             |
-| ltxv-2b-0.9.6-distilled         | 15× faster, real-time capable, fewer steps needed, no STG/CFG required                     | [ltxv-2b-0.9.6-distilled.yaml](https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-2b-0.9.6-distilled.yaml)                                     | [ltxvideo-i2v-distilled.json](https://github.com/Lightricks/ComfyUI-LTXVideo/blob/master/example_workflows/low_level/ltxvideo-i2v-distilled.json)             |
+| ltxv-2b-0.9.6-distilled         | 15脳 faster, real-time capable, fewer steps needed, no STG/CFG required                     | [ltxv-2b-0.9.6-distilled.yaml](https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-2b-0.9.6-distilled.yaml)                                     | [ltxvideo-i2v-distilled.json](https://github.com/Lightricks/ComfyUI-LTXVideo/blob/master/example_workflows/low_level/ltxvideo-i2v-distilled.json)             |
 
 
 # Quick Start Guide
@@ -224,13 +224,25 @@ source env/bin/activate
 python -m pip install -e .\[inference\]
 ```
 
+#### Model access
+
+`inference.py` downloads model weights from the Hugging Face Hub on first run. Before running local inference:
+
+1. Visit the [LTX-Video model page](https://huggingface.co/Lightricks/LTX-Video) and accept the model terms if prompted.
+2. Authenticate locally with the Hugging Face CLI so `hf_hub_download()` can access the weights:
+
+```bash
+pip install -U "huggingface_hub[cli]"
+hf auth login
+```
+
 #### FP8 Kernels (optional)
 
 [FP8 kernels](https://github.com/Lightricks/LTXVideo-Q8-Kernels) developed for LTX-Video provide performance boost on supported graphics cards (Ada architecture and later). To install FP8 kernels, follow the instructions in that repository.
 
 ### Inference
 
-📝 **Note:** For best results, we recommend using our [ComfyUI](#comfyui-integration) workflow. We're working on updating the inference.py script to match the high quality and output fidelity of ComfyUI.
+馃摑 **Note:** For best results, we recommend using our [ComfyUI](#comfyui-integration) workflow. We're working on updating the inference.py script to match the high quality and output fidelity of ComfyUI.
 
 To use our model, please follow the inference code in [inference.py](./inference.py):
 
@@ -242,7 +254,7 @@ python inference.py --prompt "PROMPT" --conditioning_media_paths IMAGE_PATH --co
 
 #### Extending a video:
 
-📝 **Note:** Input video segments must contain a multiple of 8 frames plus 1 (e.g., 9, 17, 25, etc.), and the target frame number should be a multiple of 8.
+馃摑 **Note:** Input video segments must contain a multiple of 8 frames plus 1 (e.g., 9, 17, 25, etc.), and the target frame number should be a multiple of 8.
 
 
 ```bash
@@ -285,7 +297,7 @@ Diffusers also support an 8-bit version of LTX-Video, [see details below](#ltx-v
 
 # Model User Guide
 
-## 📝 Prompt Engineering
+## 馃摑 Prompt Engineering
 
 When writing prompts, focus on detailed, chronological descriptions of actions and scenes. Include specific movements, appearances, camera angles, and environmental details - all in a single flowing paragraph. Start directly with the action, and keep descriptions literal and precise. Think like a cinematographer describing a shot list. Keep within 200 words. For best results, build your prompts using this structure:
 
@@ -302,53 +314,52 @@ When writing prompts, focus on detailed, chronological descriptions of actions a
 
 When using `LTXVideoPipeline` directly, you can enable prompt enhancement by setting `enhance_prompt=True`.
 
-## 🎮 Parameter Guide
+## 馃幃 Parameter Guide
 
 * Resolution Preset: Higher resolutions for detailed scenes, lower for faster generation and simpler scenes. The model works on resolutions that are divisible by 32 and number of frames that are divisible by 8 + 1 (e.g. 257). In case the resolution or number of frames are not divisible by 32 or 8 + 1, the input will be padded with -1 and then cropped to the desired resolution and number of frames. The model works best on resolutions under 720 x 1280 and number of frames below 257
 * Seed: Save seed values to recreate specific styles or compositions you like
 * Guidance Scale: 3-3.5 are the recommended values
 * Inference Steps: More steps (40+) for quality, fewer steps (20-30) for speed
 
-📝 For advanced parameters usage, please see `python inference.py --help`
+馃摑 For advanced parameters usage, please see `python inference.py --help`
 
 ## Community Contribution
 
-### ComfyUI-LTXTricks 🛠️
-
+### ComfyUI-LTXTricks 馃洜锔?
 A community project providing additional nodes for enhanced control over the LTX Video model. It includes implementations of advanced techniques like RF-Inversion, RF-Edit, FlowEdit, and more. These nodes enable workflows such as Image and Video to Video (I+V2V), enhanced sampling via Spatiotemporal Skip Guidance (STG), and interpolation with precise frame settings.
 
 - **Repository:** [ComfyUI-LTXTricks](https://github.com/logtd/ComfyUI-LTXTricks)
 - **Features:**
-  - 🔄 **RF-Inversion:** Implements [RF-Inversion](https://rf-inversion.github.io/) with an [example workflow here](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_inversion.json).
-  - ✂️ **RF-Edit:** Implements [RF-Solver-Edit](https://github.com/wangjiangshan0725/RF-Solver-Edit) with an [example workflow here](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_rf_edit.json).
-  - 🌊 **FlowEdit:** Implements [FlowEdit](https://github.com/fallenshock/FlowEdit) with an [example workflow here](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_flow_edit.json).
-  - 🎥 **I+V2V:** Enables Video to Video with a reference image. [Example workflow](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_iv2v.json).
-  - ✨ **Enhance:** Partial implementation of [STGuidance](https://junhahyung.github.io/STGuidance/). [Example workflow](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltxv_stg.json).
-  - 🖼️ **Interpolation and Frame Setting:** Nodes for precise control of latents per frame. [Example workflow](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_interpolation.json).
+  - 馃攧 **RF-Inversion:** Implements [RF-Inversion](https://rf-inversion.github.io/) with an [example workflow here](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_inversion.json).
+  - 鉁傦笍 **RF-Edit:** Implements [RF-Solver-Edit](https://github.com/wangjiangshan0725/RF-Solver-Edit) with an [example workflow here](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_rf_edit.json).
+  - 馃寠 **FlowEdit:** Implements [FlowEdit](https://github.com/fallenshock/FlowEdit) with an [example workflow here](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_flow_edit.json).
+  - 馃帴 **I+V2V:** Enables Video to Video with a reference image. [Example workflow](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_iv2v.json).
+  - 鉁?**Enhance:** Partial implementation of [STGuidance](https://junhahyung.github.io/STGuidance/). [Example workflow](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltxv_stg.json).
+  - 馃柤锔?**Interpolation and Frame Setting:** Nodes for precise control of latents per frame. [Example workflow](https://github.com/logtd/ComfyUI-LTXTricks/blob/main/example_workflows/example_ltx_interpolation.json).
 
 
-### LTX-VideoQ8 🎱 <a id="ltx-videoq8"></a>
+### LTX-VideoQ8 馃幈 <a id="ltx-videoq8"></a>
 
 **LTX-VideoQ8** is an 8-bit optimized version of [LTX-Video](https://github.com/Lightricks/LTX-Video), designed for faster performance on NVIDIA ADA GPUs.
 
 - **Repository:** [LTX-VideoQ8](https://github.com/KONAKONA666/LTX-Video)
 - **Features:**
-  - 🚀 Up to 3X speed-up with no accuracy loss
-  - 🎥 Generate 720x480x121 videos in under a minute on RTX 4060 (8GB VRAM)
-  - 🛠️ Fine-tune 2B transformer models with precalculated latents
+  - 馃殌 Up to 3X speed-up with no accuracy loss
+  - 馃帴 Generate 720x480x121 videos in under a minute on RTX 4060 (8GB VRAM)
+  - 馃洜锔?Fine-tune 2B transformer models with precalculated latents
 - **Community Discussion:** [Reddit Thread](https://www.reddit.com/r/StableDiffusion/comments/1h79ks2/fast_ltx_video_on_rtx_4060_and_other_ada_gpus/)
 - **Diffusers integration:** A diffusers integration for the 8-bit model is already out! [Details here](https://github.com/sayakpaul/q8-ltx-video)
 
 
-### TeaCache for LTX-Video 🍵 <a id="TeaCache"></a>
+### TeaCache for LTX-Video 馃嵉 <a id="TeaCache"></a>
 
 **TeaCache** is a training-free caching approach that leverages timestep differences across model outputs to accelerate LTX-Video inference by up to 2x without significant visual quality degradation.
 
 - **Repository:** [TeaCache4LTX-Video](https://github.com/ali-vilab/TeaCache/tree/main/TeaCache4LTX-Video)
 - **Features:**
-  - 🚀 Speeds up LTX-Video inference.
-  - 📊 Adjustable trade-offs between speed (up to 2x) and visual quality using configurable parameters.
-  - 🛠️ No retraining required: Works directly with existing models.
+  - 馃殌 Speeds up LTX-Video inference.
+  - 馃搳 Adjustable trade-offs between speed (up to 2x) and visual quality using configurable parameters.
+  - 馃洜锔?No retraining required: Works directly with existing models.
 
 ### Your Contribution
 
@@ -392,7 +403,7 @@ We are grateful for the following awesome projects when implementing LTX-Video:
 
 ## Citation
 
-📄 Our tech report is out! If you find our work helpful, please ⭐️ star the repository and cite our paper.
+馃搫 Our tech report is out! If you find our work helpful, please 猸愶笍 star the repository and cite our paper.
 
 ```
 @article{HaCohen2024LTXVideo,
